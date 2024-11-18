@@ -1,6 +1,6 @@
 ////======== This is for the Add New Board Section ===================
 
-const BACKEND_URL = "http://127.0.0.1:5000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 async function addNewBoard(boardName, user_id) {
   try {
